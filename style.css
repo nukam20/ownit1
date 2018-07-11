@@ -1,0 +1,172 @@
+@font-face {
+  font-family: 'Circular';
+  src: url('fonts/CircularStd-Book.eot');
+  src: url('fonts/CircularStd-Book.eot?#iefix') format('embedded-opentype'),
+      url('fonts/CircularStd-Book.woff2') format('woff2'),
+      url('fonts/CircularStd-Book.woff') format('woff'),
+      url('fonts/CircularStd-Book.ttf') format('truetype'),
+      url('fonts/CircularStd-Book.svg#CircularStd-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Circular, sans-serif;
+}
+/* HEADER STYLING */
+
+.overlay{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(127, 50, 111, 0.73);
+    overflow-y: hidden;
+    transition: 0.5s; 
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+.overlay h3{
+  color: white;
+}
+.logo-container img{
+  width:100px;
+  height:80px;
+}
+
+header{
+  display: flex
+}
+/* HEADER STYLING */
+.card{
+  padding: 20px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.03137254901960784)
+}
+
+ .card{
+  margin: 20px 0px;
+}
+
+section{
+  overflow: hidden;
+  padding: 0px 20px;
+}
+
+.section-title{
+  margin: 40px 0px;
+}
+.ready-to-get-started{
+  background: rgba(127, 50, 111, 0.73);
+  border:1px solid yellow;
+  color: #fff;
+  padding: 20px 0 20px 0;
+}
+.footer-top{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+.footer-bottom{
+  display: flex;
+  justify-content: space-between;
+  background:rgba(127, 50, 111, 0.73);
+  color: #ffffff;
+}
+.footer-right{
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+.footer-right li{
+  margin: 0 5px 0 5px;
+}
+.footer-right li a {
+  color: white;
+}
+@media screen and (max-width: 768px){
+
+  header{
+    display: flex;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+  }
+
+  .nav-list{
+    list-style: none;
+    padding-left: 0px;
+    position: absolute;
+    right: 50px;
+    background-color: #fff;
+    top: 30px;
+    padding: 20px;
+    color: #8BC34A;
+    z-index: 2;
+    box-shadow: 1px 6px 17px rgba(0, 0, 0, 0.03137254901960784);
+    display: none;
+  }
+  
+  header nav .nav-list li{
+    padding: 10px
+  }
+  
+  .menu-btn {
+    position: absolute;
+    background-color: #000;
+    right: 18px;
+    top: 30px;
+    padding: 4px;
+  }
+
+  .hero{
+    height: 300px;
+  }
+}
+
+
+@media screen and (min-width: 768px){
+  header{
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+  }
+  .nav-list {
+    margin-right: 20px;
+  }
+
+  .menu-btn{
+    display: none;
+  }
+
+  header nav .nav-list li{
+    padding: 20px;
+    color: #fff
+  }
+
+  .overlay h3{
+    font-size: 44px;
+    color: #fff;
+  }
+
+  .hero {
+    width:100%;
+    height: 100vh; 
+    background-image:url('./img/driver-dudu.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+/* Driver signin */
